@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon / credit card</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 68.58 86.88 68.58 86.88 0 0 0"></polygon>
+    </defs>
+    <g id="Icon-/-credit-card" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(22.000000, 25.000000)">
+            <path d="M85.88,59.2898 L85.88,9.5698 C85.874,4.8388 82.041,1.0058 77.31,0.9998 L9.57,0.9998 C4.839,1.0058 1.005,4.8388 1,9.5698 L1,59.0098 C1.005,63.7408 4.839,67.5738 9.57,67.5798 L77.7,67.5798" id="Stroke-1" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <polyline id="Stroke-3" stroke="#3B8525" stroke-width="3" stroke-linecap="round" points="20.59 50.5398 20.58 50.5398 13 50.5398"></polyline>
+            <path d="M39.0002,50.5398 L31.4502,50.5398" id="Stroke-5" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M57.0002,50.5398 L49.4392,50.5398" id="Stroke-7" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M27.2716,31.3211 L11.9816,31.3211" id="Stroke-9" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M9.9142,17.9261 L76.8672,17.9261" id="Stroke-11" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <path d="M51.0353,31.3211 L35.7453,31.3211" id="Stroke-13" stroke="#3B8525" stroke-width="3" stroke-linecap="round"></path>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-16"></g>
+            <polygon id="Stroke-15" stroke="#3B8525" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="65.053 52.112 76.867 52.112 76.867 41.786 65.053 41.786"></polygon>
+        </g>
+    </g>
+</svg>
