@@ -333,3 +333,343 @@ export const LearnMoreButton = styled(Button)`
         box-shadow: none;
     }
 `
+
+const middleSectionHardwareBackground = '../assets/png/ctrax-hardware-demo.png'
+
+export const ThirdSection = styled.div`
+    background-color: #101C29;
+    height: 820px;
+    width: inherit;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+
+`
+
+export const ThirdSectionLeft = styled.div`
+    display: grid;
+    height: inherit;
+    background-size: cover;
+    background-image: url(${middleSectionHardwareBackground});
+    background-repeat: no-repeat;
+    background-position: bottom 0rem right -7rem;
+`
+
+export const ThirdSectionRight = styled.div`
+    display: grid;
+    margin-left: 2rem;
+    width: 520px;
+    align-self: center;
+    grid-gap: 2.7rem;
+`
+
+export const ThirdSectionTitle = styled(SecondSectionLeftText)`
+
+`
+
+export const ThirdSectionText = styled(SecondSectionRightText)`
+
+`
+
+export const ThirdSectionButton = styled(LearnMoreButton)`
+    background-color: #19AECA;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 2.5rem;
+`
+
+export const ExtraText = styled.p`
+    color: #BBE5EE;	
+    font-family: "Roboto";	
+    font-size: 20px;	
+    letter-spacing: 0.2px;	
+    line-height: 26px;
+    width: 286px;
+`
+
+const rightSignIcon = '../assets/SVG/Icon/arrow-point-to-right.svg';
+
+export const ReadMore = styled.div`
+    display: grid;
+    justify-content: start;
+    align-content: start;
+    justify-self: start;
+    margin-top: 1.5rem;
+    grid-auto-flow: column;
+    & p{
+        color: #BBE5EE;	
+        font-family: "Roboto";	
+        font-size: 20px;	
+        letter-spacing: 0.2px;	
+        line-height: 26px;
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+`
+
+export const ReadMoreButton = styled.div`
+    background-color: #19AECA;
+    background-image: url(${rightSignIcon});
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+`
+
+export const FourthSection = styled.div`
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    height: 672px;
+    background-color: #101C29;
+`
+
+export const FourthSectionLeft = styled(SecondSectionLeft)`
+    width: 520px;
+    padding: 0;
+    justify-self: center;
+    & img{
+        width: 130px
+    }
+`
+
+export const FourthSectionLeftText = styled(SecondSectionLeftText)`
+    font-family: "Roboto";
+    font-weight: bold;
+    letter-spacing: 2px;
+`
+
+export const FourthSectionRight = styled(SecondSectionRight)`
+
+`
+
+export const FifthSection = styled.div`
+    width: inherit;
+    height: 701px
+    display: grid;
+    justify-content: center;
+    background-color: #FAFAFA;
+    border: 1px solid #EEEEEE;
+`
+
+export const FifthSectionHeader = styled.p`
+    color: #000000;
+    font-family: Bitter;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    width: 444px;
+    padding-top: 76.5px;
+    justify-self: center;
+`
+
+export const FifthSectionBody = styled.div`
+    width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(4, 234px);
+    grid-gap: 48px;
+    align-content: start;
+`
+
+export const FifthBodyItem = styled.div`
+    width: 234px;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    align-content: start;
+    justify-self: start;
+    align-self: start;
+`
+export const Feature = styled.div`
+    display: grid;
+    margin-left: 20px;
+    padding-top: 7px;
+    & h2{
+        color: #000000;	
+        font-family: "Roboto";	
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.2px;	
+        line-height: 26px;
+        padding-bottom: 9px;
+    }
+    & p{
+        color: #000000;	
+        font-family: "Roboto";	
+        font-size: 16px;
+        opacity: 0.6;
+        width: 183px;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+    }
+`
+
+const tick = '../assets/SVG/Icon/tick-inside-a-circle.svg';
+
+export const CircleTick = styled.div`
+    background-image: url(${tick});
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+`
+
+export const SixthSection = styled.div`
+    display: grid;
+    width: inherit;
+    height: 1010px;
+    border: 1px solid #EEEEEE;
+    justify-content: center;
+`
+
+export const SixthSectionHeader = styled.p`
+    color: #19AECA;
+    font-family: Bitter;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 76px;
+`
+
+export const SixthSectionBody = styled.p`
+    display: grid;
+    height: 678px;
+    width: 1140px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.04);
+    grid-auto-flow: column;
+`
+
+export const SalesFeature = styled.div`
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    padding: 32px;
+    ${props => props.border && css`
+        border-right: 1px solid #EEEEEE;
+    `}
+`   
+
+export const SaleFeatureTitle = styled.p`
+    color: #19AECA;
+    font-family: "Arial";
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 8px;
+`
+
+export const SaleFeatureLightText = styled.p`
+    opacity: 0.8;
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    text-align: center;
+    ${props => props.spacing && css`
+        margin-bottom: ${props.spacing}px;
+    `}
+`
+
+export const SaleFeatureCostText = styled.div`
+    display: grid;
+    width: 100px;
+    justify-self: center;
+    justify-content: center;
+    margin-top: 27px;
+    margin-bottom: 8px;
+    grid-auto-flow: column;
+    & p{
+        margin-top: 7px;
+        margin-right: 7px;
+        opacity: 0.4;
+        color: #000000;
+        font-family: "Roboto";
+        font-size: 22px;
+        letter-spacing: -0.85px;
+        line-height: 25px;
+        text-align: center;
+    }
+    & h3{
+        color: #000000;
+        font-family: Bitter;
+        font-size: 46px;
+        line-height: 54px;
+        text-align: center;
+    }
+`
+
+export const SaleFeatureText = styled.p`
+    color: #000000;
+    font-family: "Arial";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    text-align: center;
+    ${props => props.spacing && css`
+        margin-bottom: ${props.spacing}px
+    `}
+`
+
+export const SaleFeatureReadMore = styled.div`
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    align-content: center;
+    margin-bottom: 12px;
+    justify-content: center;
+    & p{
+        align-self: center;
+    }
+    & div{
+        height: 30px;
+        width: 30px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: #19AECA;
+        font-size: 12px;
+        background-color: #FFFFFF;
+        box-shadow: 2px 3px 5px 0 #19AECA;
+        border-radius: 100%;
+    }
+`
+
+export const SaleFeatureBotton = styled.button`
+    height: 45px;
+    width: 320px;
+    border-radius: 4px;
+    background-color: #19AECA;
+    color: #ffffff;
+    margin-top: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+    border: none;
+    outline: none;
+    font-family: "Arial";
+`
+
+export const SaleFeatureHorizontalDivider = styled.div`
+    height: 1px;
+    width: 320px;
+    background-color: #EEEEEE;
+    ${props => props.spacing && css`
+        margin-bottom: ${props.spacing}px
+    `}
+`
+
+export const PartnerSection = styled.div`
+    width: inherit;
+    height: 570px;
+    border: 1px solid #EEEEEE;
+    display: grid;
+`
+
+export const PartnerSectionTitle = styled(SixthSectionHeader)`
+    color: #000000;
+`
