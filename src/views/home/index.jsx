@@ -60,7 +60,13 @@ import {
     SaleFeatureReadMore,
     SaleFeatureBotton,
     PartnerSection,
-    PartnerSectionTitle
+    PartnerSectionTitle,
+    PartnerSlider,
+    SliderCard,
+    PartnerSliderContents,
+    ControlArrow,
+    SliderSensor,
+    SliderSensorPin
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -75,13 +81,17 @@ import {
 const cannabis = '../assets/SVG/icon/canna.svg';
 const payment = '../assets/SVG/icon/payments.svg';
 const tractor = '../assets/SVG/icon/manufacturer.svg';
+const partnerLogoElo = '../assets/partner-logo/partner-logo-elo.svg';
+const partnerLogoNCIN = '../assets/partner-logo/partner-logo-NCIN.png';
+const partnerLogoSquare = '../assets/partner-logo/partner-logo-square.svg';
+const rightArrow = '../assets/SVG/Icon/next.svg';
+const leftArrow = '../assets/SVG/Icon/back.svg';
+
 const headerRef = React.createRef();
 export const Home = () => {
 
     const [sticky, setSticky] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
-
-
 
     useEffect(() => {
         window.addEventListener('scroll', (e) => {
@@ -483,8 +493,34 @@ export const Home = () => {
         </SixthSection>
         <PartnerSection>
                 <PartnerSectionTitle> 
-                    
+                    Partners
                 </PartnerSectionTitle>
+                <PartnerSlider>
+                    <ControlArrow>
+                        <img src={leftArrow} alt="left"/>
+                    </ControlArrow>
+                    <PartnerSliderContents>
+                        <SliderCard>
+                            <img src={partnerLogoElo} alt={`elo`}/>
+                        </SliderCard>
+                        <SliderCard>
+                            <img src={partnerLogoSquare} alt={`Square`} />
+                        </SliderCard>
+                        <SliderCard>
+                            <img src={partnerLogoNCIN} alt={`NCIN`} />
+                        </SliderCard>
+                    </PartnerSliderContents>
+                    <ControlArrow>
+                        <img src={rightArrow} alt="right"/>
+                    </ControlArrow>
+                </PartnerSlider>
+                <SliderSensor>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin active={true}><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                </SliderSensor>
             </PartnerSection>
     </HomeLayout>
     )

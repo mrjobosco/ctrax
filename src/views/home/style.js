@@ -673,3 +673,77 @@ export const PartnerSection = styled.div`
 export const PartnerSectionTitle = styled(SixthSectionHeader)`
     color: #000000;
 `
+
+export const PartnerSlider = styled.div`
+    width: inherit;
+    height: 265px;
+    display: grid;
+    grid-auto-flow: column;
+`
+
+export const SliderCard = styled.div`
+    height: 223px;
+    width: 262px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.08);
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    & img{
+        width: 140px;
+    }
+`
+
+export const PartnerSliderContents = styled.div`
+    height: 26px;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    align-self: center;
+`
+
+export const ControlArrow = styled.div`
+    width: 46px;
+    height: 262px;
+    display: grid;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    & img{
+        width: inherit;
+    }
+`
+
+export const SliderSensor = styled.div`
+    width: inherit;
+    height: 21px;
+    display: grid;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 5px;
+`
+
+export const SliderSensorPin = styled.div`
+    padding: 2px;
+    border-radius: 100%;
+    align-self: center;
+    & div{
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #cccccc;
+    }
+    ${props => props.active && css`
+        border: 1px solid #90EE90;
+        & div{
+            width: 10px;
+            height: 10px;
+            background-color: #90EE90;
+        }
+    `}
+`
