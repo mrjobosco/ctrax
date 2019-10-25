@@ -77,7 +77,8 @@ import {
     Questions,
     QuestionsTitle,
     QuestionTextSmall,
-    QuestionButtons
+    QuestionButtons,
+    MapWrapper
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -89,6 +90,8 @@ import {
     faPlus,
     faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
+
+import Map from './map';
 
 const cannabis = '../assets/SVG/icon/canna.svg';
 const payment = '../assets/SVG/icon/payments.svg';
@@ -561,6 +564,9 @@ export const Home = () => {
                     Send a message <div><FontAwesomeIcon icon={faPaperPlane}/></div>
                 </QuestionButtons>
             </Questions>
+            <MapWrapper>
+                <Map />
+            </MapWrapper>
     </HomeLayout>
     )
 }

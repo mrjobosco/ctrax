@@ -888,3 +888,8 @@ export const QuestionButtons = styled.div`
 		background-color: #000000;
 	}
 `
+
+export const MapWrapper = styled.div`
+	width: inherit;
+	height: 300px;
+`
