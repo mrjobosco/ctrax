@@ -25,3 +25,16 @@ h1,h2,h3,h4,h6,p {
 * {
   box-sizing: border-box;
 }
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}

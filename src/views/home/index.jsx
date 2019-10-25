@@ -66,7 +66,18 @@ import {
     PartnerSliderContents,
     ControlArrow,
     SliderSensor,
-    SliderSensorPin
+    SliderSensorPin,
+    DemoWrapper,
+    Demo,
+    DemoOverlay,
+    DemoLeft,
+    DemoRight,
+    DemoLeftText,
+    DemoLeftTextSmall,
+    Questions,
+    QuestionsTitle,
+    QuestionTextSmall,
+    QuestionButtons
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -76,6 +87,7 @@ import {
     faBars,
     faTimes,
     faPlus,
+    faPaperPlane,
 } from '@fortawesome/free-solid-svg-icons';
 
 const cannabis = '../assets/SVG/icon/canna.svg';
@@ -522,6 +534,33 @@ export const Home = () => {
                     <SliderSensorPin><div /></SliderSensorPin>
                 </SliderSensor>
             </PartnerSection>
+            <DemoWrapper>
+                <Demo />
+                <DemoOverlay>
+                    <DemoLeft>
+                        <DemoLeftText>
+                            Schedule a Demo.
+                        </DemoLeftText>
+                        <DemoLeftTextSmall>
+                            We'll never share your email and you can
+                            opt out at any time!
+                        </DemoLeftTextSmall>
+                    </DemoLeft>
+                    <DemoRight></DemoRight>
+                </DemoOverlay>
+            </DemoWrapper>
+            <Questions>
+                <QuestionsTitle>
+                    Questions?
+                </QuestionsTitle>
+                <QuestionTextSmall>
+                    Our support team is available via email or chat to help
+                    you with questions.
+                </QuestionTextSmall>
+                <QuestionButtons>
+                    Send a message <div><FontAwesomeIcon icon={faPaperPlane}/></div>
+                </QuestionButtons>
+            </Questions>
     </HomeLayout>
     )
 }
