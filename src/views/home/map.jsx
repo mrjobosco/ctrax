@@ -8,7 +8,7 @@ export default class Map extends Component {
       width: window.innerWidth,
       height: 400,
       latitude: 40.7128,
-      longitude: 74.0060,
+      longitude: -73.935242,
       zoom: 8
     }
   };

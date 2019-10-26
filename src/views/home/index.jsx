@@ -78,7 +78,15 @@ import {
     QuestionsTitle,
     QuestionTextSmall,
     QuestionButtons,
-    MapWrapper
+    MapWrapper,
+    FooterWrapper,
+    FooterRightSide,
+    FooterRightContent,
+    FooterLeftSide,
+    FooterSocials,
+    FooterApp,
+    AppleText,
+    FooterButton
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -101,6 +109,13 @@ const partnerLogoNCIN = '../assets/partner-logo/partner-logo-NCIN.png';
 const partnerLogoSquare = '../assets/partner-logo/partner-logo-square.svg';
 const rightArrow = '../assets/SVG/Icon/next.svg';
 const leftArrow = '../assets/SVG/Icon/back.svg';
+const behance = '../assets/SVG/Icon/behance.svg';
+const facebook = '../assets/SVG/Icon/facebook-logo.svg';
+const google = '../assets/SVG/Icon/google-plus.svg';
+const twitter = '../assets/SVG/Icon/twitter-black-shape.svg';
+const instagram = '../assets/SVG/Icon/instagram-logo.svg';
+const apple = '../assets/SVG/Icon/apple.svg';
+
 
 const headerRef = React.createRef();
 export const Home = () => {
@@ -567,6 +582,58 @@ export const Home = () => {
             <MapWrapper>
                 <Map />
             </MapWrapper>
+            <FooterWrapper>
+                <FooterRightSide>
+                    <FooterRightContent>
+                        <h5>Solutions</h5>
+                        <p>Management Solutions</p>
+                        <p>Processing and Manufacturing Solutions</p>
+                        <p>Data Analytics</p>
+                    </FooterRightContent>
+                    <FooterRightContent>
+                        <h5>Store</h5>
+                        <p>Hardware Merchandise</p>
+                    </FooterRightContent>
+                    <FooterRightContent>
+                        <h5>Company</h5>
+                        <p>About C-Trax</p>
+                        <p>Blog</p>
+                        <p>Contacts</p>
+                    </FooterRightContent>
+                    <FooterRightContent>
+                        <h5>Contacts</h5>
+                        <p>info@c-trax.com</p>
+                        <p>227 W. 4th Street Charlotte, NC 28202</p>
+                        <p>Contacts</p>
+                    </FooterRightContent>
+                    <FooterRightContent>
+                        <h5>Point of Sale</h5>
+                        <p>Hardware Solutions</p>
+                    </FooterRightContent>
+                </FooterRightSide>
+                <FooterLeftSide>
+                    <FooterSocials>
+                        <p>Follow us</p>
+                        <div>
+                            <img src={google} alt={'google'}/>
+                            <img src={facebook} alt={'facebook'}/>
+                            <img src={twitter} alt={'twitter'} />
+                            <img src={instagram} alt={'instagram'}/>
+                            <img src={behance} alt={'behance'}/>
+                        </div>
+                    </FooterSocials>
+                    <FooterApp>
+                        <p>Download our app</p>    
+                        <FooterButton>
+                            <img src={apple} alt={'apple'}/>
+                            <AppleText>
+                                <p>Download on the</p>
+                                <h5>App Store</h5>
+                            </AppleText> 
+                        </FooterButton>
+                    </FooterApp>
+                </FooterLeftSide>
+            </FooterWrapper>
     </HomeLayout>
     )
 }
