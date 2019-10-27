@@ -10,11 +10,17 @@ import {
     ProductItem,
     ProductName,
     ProductCost,
-    ProductJumbotron
+    ProductJumbotron,
+    UpdateSection,
+    UpdateLeftSection,
+    UpdateRightSection
 } from './style';
 import { Slider } from 'components/slider';
 import { Features } from 'components/features';
-import { GreenArrowButtons } from 'components/bottons';
+import { GreenArrowButtons } from 'components/buttons';
+import { Input } from 'components/forms/Input';
+import { FullButton } from 'components/buttons/styles';
+import Footer from 'components/footer';
 
 const shirts = '../assets/png/merchandise-holder.png';
 
@@ -99,6 +105,21 @@ export const Store = () => {
                     </ProductItem>
                 </ProductRow>
              </Products>
+             <UpdateSection>
+                <UpdateLeftSection>
+                    <h4>Get Fresh Updates!</h4>
+                    <p>we'll never share your email address and you can opt out at any time.</p>
+                </UpdateLeftSection>
+                <UpdateRightSection>
+                    <div>
+                        <Input />
+                    </div>
+                    <div>
+                        <FullButton>Sign Up </FullButton>
+                    </div>
+                </UpdateRightSection>
+             </UpdateSection>
+             <Footer />
         </StoreLayout>
     )
 }

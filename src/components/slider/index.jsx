@@ -12,7 +12,7 @@ import {
     ShopNowButton,
 
 } from './style';
-import { BlueArrowButton } from 'components/bottons';
+import { BlueArrowButton } from 'components/buttons';
 
 const rightArrow = '../assets/SVG/Icon/next.svg';
 const leftArrow = '../assets/SVG/Icon/back.svg';

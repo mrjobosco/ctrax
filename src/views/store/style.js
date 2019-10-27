@@ -133,6 +133,47 @@ export const ProductRow = styled.div`
     margin-bottom: 1rem;
 `
 
-export const UpdateSections = styled.div`
-    
+export const UpdateSection = styled.div`
+    width: inherit;
+    height: 270px;
+    display: grid;
+    background-color: #101C29;
+    grid-template-columns: 6fr 6fr;
+    align-content: center;
+    justify-content: center;
+
+`
+
+export const UpdateLeftSection = styled.div`
+    display: grid;
+    align-content: center;
+    grid-gap: 2rem;
+    justify-content: center;
+    & h4{
+        height: 34px;
+        width: 258px;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 30px;
+        letter-spacing: 0.1px;
+        line-height: 34px;
+    }
+    & p{
+        height: 50px;
+        width: 365px;
+        opacity: 0.8;
+        color: #FFFFFF;
+        font-family: Bitter;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 25px;
+    }
+`
+
+export const UpdateRightSection = styled.div`
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-content: center;
+    grid-gap: 1rem;
+    align-items: end;
 `
