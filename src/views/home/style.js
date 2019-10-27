@@ -902,18 +902,28 @@ export const FooterWrapper = styled.div`
 	border: 1px solid #212A3E;
 	background-color: #101C29;
 	display: grid;
-	grid-template-columns: 8fr 4fr;
-	padding: 40px;
+	align-content: start;
+`
+
+export const FooterFirstCompartment = styled.div`
+	width: inherit;
+	display: grid;
+	grid-template-columns: 9fr 3fr;
+	justify-items: start;
+	margin: 60px 0;
 `
 
 export const FooterRightSide = styled.div`
 	display: grid;
+	height: 317px;
+	align-self: center;
 	grid-template-columns: repeat(4, 200px);
 	grid-gap: 2rem;
 	padding: 2rem;
 	grid-row-gap: 3rem;
 	justify-content: center;
 	align-content: center;
+	justify-self: center;
 `
 
 export const FooterRightContent = styled.div`
@@ -926,7 +936,6 @@ export const FooterRightContent = styled.div`
 	align-self: start;
 	width: 200px;
 	& h5{
-		width: 68px;
 		color: #FFFFFF;
 		font-family: Avenir;
 		font-size: 16px;
@@ -950,7 +959,9 @@ export const FooterRightContent = styled.div`
 export const FooterLeftSide = styled.div`
 	display: grid;
 	width: inherit;
+	height: 317px;
 	align-content: start;
+	align-self: center;
 	grid-gap: 3.5rem;
 `
 
@@ -1036,4 +1047,40 @@ export const AppleText = styled.div`
 		padding: 0;
 		margin: 0;
 	}
+`
+
+export const FooterDivider = styled.div`
+	height: 1px;
+	width: inherit;
+	opacity: 0.1;
+	background-color: #FFFFFF;
+	align-self: start;
+	margin-bottom: 60px;
+`
+
+export const Footer = styled.div`
+	display: grid;
+	width: inherit;
+	padding-left: 150px;
+	align-content: center;
+	grid-template-columns: 8fr 4fr;
+`
+
+export const FooterLeft = styled.div`
+	display: grid;
+	width: inherit;
+	grid-auto-flow: column;
+	justify-content: start;
+	padding-left: 32px;
+	grid-gap: 2.2rem;
+`
+
+export const FooterItems = styled.p`
+	opacity: 0.8;
+	color: #FFFFFF;
+	font-family: Avenir;
+	font-size: 17px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+	line-height: 23px;
 `

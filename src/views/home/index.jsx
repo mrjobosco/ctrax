@@ -86,7 +86,12 @@ import {
     FooterSocials,
     FooterApp,
     AppleText,
-    FooterButton
+    FooterButton,
+    FooterFirstCompartment,
+    FooterDivider,
+    Footer,
+    FooterLeft,
+    FooterItems
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
@@ -583,6 +588,7 @@ export const Home = () => {
                 <Map />
             </MapWrapper>
             <FooterWrapper>
+                <FooterFirstCompartment>
                 <FooterRightSide>
                     <FooterRightContent>
                         <h5>Solutions</h5>
@@ -633,6 +639,16 @@ export const Home = () => {
                         </FooterButton>
                     </FooterApp>
                 </FooterLeftSide>
+                </FooterFirstCompartment>
+                <FooterDivider />
+                <Footer>
+                    <FooterLeft>
+                        <FooterItems>FAQ</FooterItems>
+                        <FooterItems>Media</FooterItems>
+                        <FooterItems>Privacy</FooterItems>
+                    </FooterLeft>
+                    <FooterItems>© 2019 C-Trax</FooterItems>
+                </Footer>
             </FooterWrapper>
     </HomeLayout>
     )
