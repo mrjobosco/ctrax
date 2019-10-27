@@ -10,10 +10,10 @@ export const LearnMoreButton = styled(Button)`
 		height: 42px;
 		width: 163px;
 		& div{
-				opacity: 1;
-				background-color: transparent;
-				border: none;
-				box-shadow: none;
+			opacity: 1;
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
 		}
 `;
 
