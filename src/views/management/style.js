@@ -39,6 +39,7 @@ export const MenuItem = styled.p`
     font-size: 17px;
     letter-spacing: 0.2px;
     line-height: 23px;
+    cursor: pointer;
 `
 
 export const HeaderButton = styled.div`

@@ -13,7 +13,7 @@ import { HeaderWrapper,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBars } from '@fortawesome/free-solid-svg-icons';
 
-export const Header  = () => {
+export const Header  = (props) => {
     return(
         <HeaderBackground>
             <HeaderWrapper/>
@@ -24,6 +24,7 @@ export const Header  = () => {
                 </Logo>
                 <Menu>
                     <HeaderMenu>
+                        <HeaderMunuItems onClick={props.link.bind(null, '')}>Home</HeaderMunuItems>
                         <HeaderMunuItems>POS Hardware</HeaderMunuItems>
                         <HeaderMunuItems>Merchandise</HeaderMunuItems>
                         <HeaderMunuItems>Sign In</HeaderMunuItems>

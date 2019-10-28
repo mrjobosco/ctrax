@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import {Home} from 'views/home';
-import {Store} from 'views/store';
-import {Management} from 'views/management';
+import Home from 'views/home';
+import Store from 'views/store';
+import Management from 'views/management';
 import {
   BrowserRouter as Router, 
   Route,

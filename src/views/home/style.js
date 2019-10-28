@@ -140,6 +140,7 @@ export const MenuItem = styled.p`
 		letter-spacing: 0.2px;
 		justify-self: start;
 		line-height: 23px;
+		cursor: pointer;
 `
 
 export const MenuOverlay = styled.div`

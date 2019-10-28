@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {withRouter} from 'react-router-dom';
 import {
     HomeLayout, 
     TitleManagement, 
@@ -97,11 +98,14 @@ const rightArrow = '../assets/SVG/Icon/next.svg';
 const leftArrow = '../assets/SVG/Icon/back.svg';
 
 const headerRef = React.createRef();
-export const Home = () => {
+const Home = (props) => {
 
     const [sticky, setSticky] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
+    const goto = (path) => {
+        props.history.push(`/${path}`);
+    }
     useEffect(() => {
         window.addEventListener('scroll', (e) => {
             if(headerRef.current){
@@ -191,10 +195,10 @@ export const Home = () => {
             </TextWrapper>
         </HeaderWrapper>   
         <MiddleNav ref={headerRef} sticky={sticky}>
-            <MenuItem>Management Solutions</MenuItem>
+            <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
             <MenuItem>Point of Sale</MenuItem>
-            <MenuItem>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
-            <MenuItem>About CTRAX</MenuItem>
+            <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
+            <MenuItem onClick={goto.bind(null, 'management')}>About CTRAX</MenuItem>
             <MenuItem>Blog</MenuItem>
             <MenuItem>Contact</MenuItem>
         </MiddleNav>
@@ -550,3 +554,5 @@ export const Home = () => {
     </HomeLayout>
     )
 }
+
+export default withRouter(Home)

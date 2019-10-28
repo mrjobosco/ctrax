@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './header';
+import {withRouter} from 'react-router-dom';
 import {
     StoreLayout,
     Products,
@@ -25,10 +26,13 @@ import Footer from 'components/footer';
 const shirts = '../assets/png/merchandise-holder.png';
 
 
-export const Store = () => {
+const Store = (props) => {
+    const goto = (path) => {
+        props.history.push(`/${path}`);
+    }
     return (
         <StoreLayout>
-             <Header />
+             <Header link={goto} />
              <Slider />
              <Features />
              <Products>
@@ -123,3 +127,5 @@ export const Store = () => {
         </StoreLayout>
     )
 }
+
+export default withRouter(Store);

@@ -1,4 +1,5 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
 import {
     ManagementLayout,
     FirstSection,
@@ -62,18 +63,21 @@ const twitter = '../assets/SVG/twitter-black-shape.svg';
 const instagram = '../assets/SVG/instagram-logo.svg';
 
 
-export const Management  = () => {
+const Management  = (props) => {
+    const goto = (path) => {
+        props.history.push(`/${path}`);
+    }
     return (
         <ManagementLayout>
             <FirstSection>
                 <Header>
                     <div/>
                     <Menu>
-                        <MenuItem>Home</MenuItem>
+                        <MenuItem onClick={goto.bind(null, '')}>Home</MenuItem>
                         <MenuItem>Management Solutions</MenuItem>
                         <MenuItem>Point of Sale</MenuItem>
-                        <MenuItem>Store</MenuItem>
-                        <MenuItem>About CTrax</MenuItem>
+                        <MenuItem onClick={goto.bind(null, 'store')}>Store</MenuItem>
+                        <MenuItem>About C-Trax</MenuItem>
                         <MenuItem>Blog</MenuItem>
                         <MenuItem>Contact</MenuItem>
                     </Menu>
@@ -282,3 +286,5 @@ export const Management  = () => {
         </ManagementLayout>
     )
 }
+
+export default withRouter(Management)
