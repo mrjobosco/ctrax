@@ -1,7 +1,7 @@
 import React from 'react';
-import {BlueButton, LearnMoreButton} from './styles';
+import {BlueButton, LearnMoreButton, TitleButton} from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowRight,faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 
 export const BlueArrowButton  = (props) => {
@@ -19,5 +19,14 @@ export const GreenArrowButtons = (props) => {
         <LearnMoreButton>
             {text} <div><FontAwesomeIcon icon={faArrowRight} /></div>
         </LearnMoreButton>
+    )
+}
+
+export const BlueFullButtons = (props) => {
+    const {text} = props;
+    return (
+        <TitleButton>
+               {text}<div><FontAwesomeIcon icon={faAngleRight}/></div>
+        </TitleButton>
     )
 }
