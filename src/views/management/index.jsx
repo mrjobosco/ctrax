@@ -17,12 +17,25 @@ import {
     HeadShotOutline,
     HeadShotImage,
     ExtraOutline,
-    JoinTheTeam
+    JoinTheTeam,
+    PartnerSection,
+    PartnerSectionTitle,
+    PartnerSlider,
+    SliderCard,
+    PartnerSliderContents,
+    ControlArrow,
+    SliderSensor,
+    SliderSensorPin,
 } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { BlueFullButtons } from 'components/buttons';
 
+const partnerLogoElo = '../assets/partner-logo/partner-logo-elo.svg';
+const partnerLogoNCIN = '../assets/partner-logo/partner-logo-NCIN.png';
+const partnerLogoSquare = '../assets/partner-logo/partner-logo-square.svg';
+const rightArrow = '../assets/SVG/Icon/next.svg';
+const leftArrow = '../assets/SVG/Icon/back.svg';
 export const Management  = () => {
     return (
         <ManagementLayout>
@@ -120,6 +133,37 @@ export const Management  = () => {
                         </HeaderShot>
                 </TeamContent>
             </Team>
+            <PartnerSection>
+                <PartnerSectionTitle> 
+                    Partners
+                </PartnerSectionTitle>
+                <PartnerSlider>
+                    <ControlArrow>
+                        <img src={leftArrow} alt="left"/>
+                    </ControlArrow>
+                    <PartnerSliderContents>
+                        <SliderCard>
+                            <img src={partnerLogoElo} alt={`elo`}/>
+                        </SliderCard>
+                        <SliderCard>
+                            <img src={partnerLogoSquare} alt={`Square`} />
+                        </SliderCard>
+                        <SliderCard>
+                            <img src={partnerLogoNCIN} alt={`NCIN`} />
+                        </SliderCard>
+                    </PartnerSliderContents>
+                    <ControlArrow>
+                        <img src={rightArrow} alt="right"/>
+                    </ControlArrow>
+                </PartnerSlider>
+                <SliderSensor>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin active={true}><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                    <SliderSensorPin><div /></SliderSensorPin>
+                </SliderSensor>
+            </PartnerSection>
         </ManagementLayout>
     )
 }
