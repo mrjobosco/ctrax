@@ -1,7 +1,26 @@
 import React from 'react';
-import { ManagementLayout, FirstSection, Header, Menu, MenuItem, HeaderButton, FirstSectionContent, FirstSectionLeftSide, FirstSectionRightSide } from './style';
+import {
+    ManagementLayout,
+    FirstSection,
+    Header,
+    Menu,
+    MenuItem,
+    HeaderButton,
+    FirstSectionContent,
+    FirstSectionLeftSide,
+    FirstSectionRightSide,
+    Team,
+    TeamTitle,
+    TeamContent,
+    TeamLeftSide,
+    HeaderShot,
+    HeadShotOutline,
+    HeadShotImage,
+    ExtraOutline,
+    JoinTheTeam
+} from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { BlueFullButtons } from 'components/buttons';
 
 export const Management  = () => {
@@ -39,6 +58,68 @@ export const Management  = () => {
                     </FirstSectionRightSide>
                 </FirstSectionContent>
             </FirstSection>
+            <Team>
+                <TeamTitle>Meet Our Team</TeamTitle>
+                <TeamContent>
+                    <TeamLeftSide>
+                        <HeaderShot>
+                            <HeadShotOutline>
+                                <HeadShotImage>
+
+                                </HeadShotImage>
+                            </HeadShotOutline>
+                            <h4>Name</h4>
+                            <p>Title</p>
+                        </HeaderShot>
+                        <HeaderShot>
+                            <HeadShotOutline>
+                                <HeadShotImage>
+                                    
+                                </HeadShotImage>
+                            </HeadShotOutline>
+                            <h4>Name</h4>
+                            <p>Title</p>
+                        </HeaderShot>
+                        <HeaderShot>
+                            <HeadShotOutline>
+                                <HeadShotImage>
+                                    
+                                </HeadShotImage>
+                            </HeadShotOutline>
+                            <h4>Name</h4>
+                            <p>Title</p>
+                        </HeaderShot>
+                        <HeaderShot>
+                            <HeadShotOutline>
+                                <HeadShotImage>
+                                    
+                                </HeadShotImage>
+                            </HeadShotOutline>
+                            <h4>Name</h4>
+                            <p>Title</p>
+                        </HeaderShot>
+                        <HeaderShot>
+                            <HeadShotOutline>
+                                <HeadShotImage>
+                                    
+                                </HeadShotImage>
+                            </HeadShotOutline>
+                            <h4>Name</h4>
+                            <p>Title</p>
+                        </HeaderShot>
+                    </TeamLeftSide>
+                    <HeaderShot>
+                        <ExtraOutline>
+                            <HeadShotOutline>
+                                <JoinTheTeam>
+                                    <FontAwesomeIcon icon={faPlus} />
+                                </JoinTheTeam>
+                            </HeadShotOutline>
+                        </ExtraOutline>
+                        <h4>Join the team</h4>
+                        </HeaderShot>
+                </TeamContent>
+            </Team>
         </ManagementLayout>
     )
 }
