@@ -293,3 +293,184 @@ export const SliderSensorPin = styled.div`
 		}
 	`}
 `
+
+export const Investor = styled.div`
+    height: 559px;
+    width: inherit;
+    display: grid;
+    border: 1px solid #EEEEEE;
+    background-color: #FAFAFA;
+    grid-template-columns: 6fr 6fr;
+`
+
+
+export const InvestorLeftSide = styled.div`
+    width: inherit;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-gap: 3rem;
+    & h4{
+        color: #000000;
+        font-family: "Roboto";
+        font-size: 46px;
+        line-height: 54px;
+    }
+    & p{
+        opacity: 0.6;
+        color: #000000;
+        width: 571px;
+        font-family: Avenir;
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: 0.2px;
+        line-height: 30px;
+    }
+`
+
+export const InvestorRightSide = styled.div`
+    display: grid;
+    align-content: center;
+    grid-gap: 3rem;
+    justify-content: center;
+`
+
+export const Socials = styled.div`
+    display: grid;
+    width: 211px;
+    margin-top: 3rem;
+    align-content: start;
+    justify-content: start;
+    grid-gap: 2rem;
+    & p{
+        height: 16px;
+        width: 70px;
+        color: #000000;
+        font-family: Avenir;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        line-height: 16px;
+        text-align: center;
+    }
+    & div{
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        grid-gap: 1.7rem;
+        & img{
+            height: 25px;
+            width: 25px;
+            opacity: .2;
+            display: grid;
+        }
+    }
+`
+
+export const Blog = styled.div`
+    display: grid;
+    justify-content: center;
+    height: 930px;
+    width: inherit;
+    border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+`
+
+export const BlogTitle = styled.p`
+    width: inherit;
+    margin-top: 93px;
+    margin-bottom: 93px;
+    color: #000000;
+    font-family: Bitter;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+`
+
+export const BlogContent = styled.div`
+    display: grid;
+    justify-content: center;
+    width: inherit;
+    grid-template-columns: repeat(3, 4fr);
+    grid-gap: 3rem;
+`
+
+export const BlogItem = styled.div`
+    height: 590px;
+    width: 360px;
+    display: grid;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.08);
+    align-content: start;
+`
+
+export const BlogImage = styled.div`
+    width: 360px;
+    height: 260px;
+    border-radius: 4px 4px 0 0;
+    background-color: #E4F1FD;
+`
+
+export const BlogItemContent = styled.div`
+    display: grid;
+    padding: 30px;
+    align-items: start;
+    grid-gap: 2rem;
+`
+
+export const BlogDate = styled.p`
+    color: #4EA3ED;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 12px;
+`
+
+export const BlogItemTitle = styled.p`
+    color: #000000;
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    line-height: 36px;
+`
+
+export const BlogItemText = styled.p`
+    opacity: 0.4;	
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+`
+
+export const Divider = styled.div`
+    width: inherit;
+    height: 1px;
+    opacity: 0.4;	
+    background-color: #000000;
+    align-self: end;
+`
+
+export const BlogFooter = styled.div`
+    display: grid;
+    grid-auto-flow: column;
+    align-self: end;
+    width: inherit;
+    justify-content: start;
+    color: #000000;
+    font-family: "Arial";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 16px;
+    & div{
+        & span{
+            color: #CCCCCC;
+            margin-left: 10px
+        }
+    }
+    & p{
+        justify-self: end;
+        margin-left: 9rem;
+        color: #91CA62;
+    }
+`

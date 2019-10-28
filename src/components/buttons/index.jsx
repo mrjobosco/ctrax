@@ -30,3 +30,12 @@ export const BlueFullButtons = (props) => {
         </TitleButton>
     )
 }
+
+export const GreenFullButtons = (props) => {
+    const {text} = props;
+    return (
+        <TitleButton color={'green'}>
+               {text}<div><FontAwesomeIcon icon={faAngleRight}/></div>
+        </TitleButton>
+    )
+}

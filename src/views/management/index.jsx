@@ -26,16 +26,42 @@ import {
     ControlArrow,
     SliderSensor,
     SliderSensorPin,
+    Investor,
+    InvestorLeftSide,
+    InvestorRightSide,
+    Socials,
+    Blog,
+    BlogTitle,
+    BlogContent,
+    BlogItem,
+    BlogImage,
+    BlogItemContent,
+    BlogDate,
+    BlogItemTitle,
+    BlogItemText,
+    Divider,
+    BlogFooter,
 } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPlus, faComment, faEye, faShare } from '@fortawesome/free-solid-svg-icons';
 import { BlueFullButtons } from 'components/buttons';
+import { GreenFullButtons } from 'components/buttons';
+import Footer from 'components/footer';
+
 
 const partnerLogoElo = '../assets/partner-logo/partner-logo-elo.svg';
 const partnerLogoNCIN = '../assets/partner-logo/partner-logo-NCIN.png';
 const partnerLogoSquare = '../assets/partner-logo/partner-logo-square.svg';
 const rightArrow = '../assets/SVG/Icon/next.svg';
 const leftArrow = '../assets/SVG/Icon/back.svg';
+
+const behance = '../assets/SVG/behance.svg';
+const facebook = '../assets/SVG/facebook-logo.svg';
+const google = '../assets/SVG/google-plus.svg';
+const twitter = '../assets/SVG/twitter-black-shape.svg';
+const instagram = '../assets/SVG/instagram-logo.svg';
+
+
 export const Management  = () => {
     return (
         <ManagementLayout>
@@ -164,6 +190,95 @@ export const Management  = () => {
                     <SliderSensorPin><div /></SliderSensorPin>
                 </SliderSensor>
             </PartnerSection>
+            <Investor>
+                <InvestorLeftSide>
+                    <h4>Investors</h4>
+                    <p>
+                        C-Trax is an ERP solution for industrial hemp business to manage sales,
+                        payments, staff, customers, and inventory in one place.
+                    </p>
+                    <p>
+                        Our goal is to provide a one stop shop for cannabis and hemnp software
+                        solutions and this will be achieved through strategic partnerships and
+                        user-centric approach to our agile development process.
+                    </p>
+                </InvestorLeftSide>
+                <InvestorRightSide>
+                    <GreenFullButtons text={'Inquire about our solutions'} />
+                    <Socials>
+                        <p>Follow us</p>
+                        <div>
+                            <img src={google} alt={'google'}/>
+                            <img src={facebook} alt={'facebook'}/>
+                            <img src={twitter} alt={'twitter'} />
+                            <img src={instagram} alt={'instagram'}/>
+                            <img src={behance} alt={'behance'}/>
+                        </div>
+                    </Socials>
+                </InvestorRightSide>
+            </Investor>
+            <Blog>
+                <BlogTitle>
+                    Blog
+                </BlogTitle>
+                <BlogContent>
+                    <BlogItem>
+                        <BlogImage/>
+                        <BlogItemContent>
+                            <BlogDate>APR 11. 2016</BlogDate> 
+                            <BlogItemTitle>Libero Leo, mattis id blandit id</BlogItemTitle>
+                            <BlogItemText>In libero leo mattis id blandit id, suscipit at elit.</BlogItemText>
+                            <Divider />
+                            <BlogFooter>
+                                <div>
+                                    <span><FontAwesomeIcon icon={faComment} /></span> 123
+                                </div>
+                               <div>
+                                    <span> <FontAwesomeIcon icon={faEye} /> </span> 4567
+                               </div>
+                               <p><FontAwesomeIcon icon={faShare} /></p>
+                            </BlogFooter>
+                        </BlogItemContent>
+                    </BlogItem>
+                    <BlogItem>
+                        <BlogImage/>
+                        <BlogItemContent>
+                            <BlogDate>APR 11. 2016</BlogDate> 
+                            <BlogItemTitle>Libero Leo, mattis id blandit id</BlogItemTitle>
+                            <BlogItemText>In libero leo mattis id blandit id, suscipit at elit.</BlogItemText>
+                            <Divider />
+                            <BlogFooter>
+                                <div>
+                                    <span><FontAwesomeIcon icon={faComment} /></span> 123
+                                </div>
+                               <div>
+                                    <span> <FontAwesomeIcon icon={faEye} /> </span> 4567
+                               </div>
+                               <p><FontAwesomeIcon icon={faShare} /></p>
+                            </BlogFooter>
+                        </BlogItemContent>
+                    </BlogItem>
+                    <BlogItem>
+                        <BlogImage/>
+                        <BlogItemContent>
+                            <BlogDate>APR 11. 2016</BlogDate> 
+                            <BlogItemTitle>Libero Leo, mattis id blandit id</BlogItemTitle>
+                            <BlogItemText>In libero leo mattis id blandit id, suscipit at elit.</BlogItemText>
+                            <Divider />
+                            <BlogFooter>
+                                <div>
+                                    <span><FontAwesomeIcon icon={faComment} /></span> 123
+                                </div>
+                               <div>
+                                    <span> <FontAwesomeIcon icon={faEye} /> </span> 4567
+                               </div>
+                               <p><FontAwesomeIcon icon={faShare} /></p>
+                            </BlogFooter>
+                        </BlogItemContent>
+                    </BlogItem>
+                </BlogContent>
+            </Blog>
+            <Footer />
         </ManagementLayout>
     )
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { Button } from 'components/forms/Input';
 
 
@@ -61,6 +61,10 @@ export const TitleButton = styled.div`
 		letter-spacing: 0.2px;
 		line-height: 22px;
 		border: none;
+		${props => (props.color === 'green') && css`
+			background-color: #91CA62;
+			width: 260px;
+		`}
 		& div{
 				height: 22px;
 				text-align: center;
