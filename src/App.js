@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import Home from 'views/home';
 import Store from 'views/store';
-import Management from 'views/management';
 import About from 'views/about';
+import Test from 'views/test';
 import {
   BrowserRouter as Router, 
   Route,
@@ -14,8 +14,8 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path={'/test'} component={Test} />
         <Route path={'/about'} component={About} />
-        <Route path={'/management'} component={Management} />
         <Route path={'/store'} component={Store} />
         <Route path={'/'} component={Home} />
       </Switch>

@@ -41,7 +41,7 @@ export const Slider = () => {
                 <SliderSensor>
                     <SliderSensorPin><div /></SliderSensorPin>
                     <SliderSensorPin><div /></SliderSensorPin>
-                    <SliderSensorPin active={true}><div /></SliderSensorPin>
+                    <SliderSensorPin active={true}><div/></SliderSensorPin>
                     <SliderSensorPin><div /></SliderSensorPin>
                     <SliderSensorPin><div /></SliderSensorPin>
                 </SliderSensor>

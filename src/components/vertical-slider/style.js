@@ -34,7 +34,8 @@ export const HeroLayout = styled.div`
   height: 720px;
   display: grid;
   grid-template-columns: 6fr 6fr;
-  overflow-y: hidden;
+	overflow-y: hidden;
+	background-color: rgb(145, 202, 98);
 `
 
 export const HeroBlock = styled.div`
@@ -61,46 +62,48 @@ export const HeroLeftFirstItem = styled(HeroBlock)`
   display: grid;
   align-content: center;
   height: 720px;
-  background-image: linear-gradient(226.3deg, #539836 50%, #3B8525 100%);
   background-repeat: no-repeat;
   background-size: cover;
 `
+// background-image: linear-gradient(226.3deg, #539836 50%, #3B8525 100%);
 // background-position: top 4rem left 40rem, right 0;
 // background-image: url(${halftone2}), linear-gradient(226.3deg, #539836 50%, #3B8525 100%);
 // background-position: top 0, left -40%, right 0;
   
   
 export const HeroRightFirstItem = styled(HeroBlock)`
-  height: 720px;
-  background: linear-gradient(226.3deg, #91CA62 0%, #539836 0%);
-  background-image: url(${iPadImage}), url(${halftone1}), linear-gradient(226.3deg, #91CA62 0%, #539836 0%);
+	height: 720px;
+	background-color: transparent;
+  background-image: url(${iPadImage}), url(${halftone1});
   background-repeat: no-repeat;
   background-position: left 0rem top 4rem, right 46% top -8rem,right 0;
   background-size: cover, cover, cover, cover;
 `
+// background: linear-gradient(226.3deg, #91CA62 0%, #539836 0%);
 // background-position: left 96.1% top -0%,left 0rem top 4rem,right -7rem,right 0;
 // background-image: url(${halftone2}), url(${iPadImage}), url(${halftone1}), linear-gradient(226.3deg, #91CA62 0%, #539836 0%);
   
 
 
 export const HeroLeftSecondItem = styled(HeroBlock)`
-  height: 720px;
-  background: linear-gradient(226.3deg, #1A2C3E 50%, #101C29 100%);
-  background-image: url(${hardware}), url(${halftone3}), linear-gradient(226.3deg, #1A2C3E 50%, #101C29 100%);
+	height: 720px;
+	background-color: transparent;
+  background-image: url(${hardware}), url(${halftone3});
   background-repeat: no-repeat;
-  background-position: left 0 bottom -94%,left -3rem top 3rem,right 0px;
+  background-position: left 0 bottom -94%,left -3rem top 3rem;
   background-size: contain, cover, cover, cover;
 `
-
+// background: linear-gradient(226.3deg, #1A2C3E 50%, #101C29 100%);
 // background-position: left 14rem top 6rem, left 0rem top 4rem, right 0;
   
 
 export const HeroRightSecondItem = styled(HeroBlock)`
 	display: grid;
 	align-content: center;
-  height: 720px;
-  background: linear-gradient(226.3deg, #253C53 0%, #1A2C3E 0%);
+	height: 720px;
+	background-color: transparent; 
 `
+// background: linear-gradient(226.3deg, #253C53 0%, #1A2C3E 0%);
 
 export const TextWrapper = styled.div`
 		display: grid;
@@ -182,3 +185,17 @@ export const TitleText = styled.p`
 export const TitleCaptionSmall = styled(TitleCaption)`
 	font-size: 32px;
 `
+
+export const pin = styled.div`
+	height: 20px;
+	width: 20px;
+	border: 1px solid #91CA62;
+	opacity: 0.2;
+`
+
+export const Controls = styled.div`
+	width: 50px;
+	height: 70px;
+	display: grid;
+`
+

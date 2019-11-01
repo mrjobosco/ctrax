@@ -15,7 +15,7 @@ import {
   TitleText,
 
 } from './style';
-import { trottle, animate } from './logic';
+import { animate, animateColor } from './logic';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   faAngleRight,
@@ -25,26 +25,27 @@ import {
 export const Hero = () => {
   let leftSideRef = useRef(null);
   let rightSideRef = useRef(null);
+  let parentRef = useRef(null);
 
 
   useEffect(() => {
-
-    window.addEventListener('wheel', trottle((e) => {
-      console.log(e)
-      if (e.deltaY > 0) {
-        // scrolling up
-        animate(leftSideRef, (-720));
-        animate(rightSideRef, 0);
+    let alternate = true;
+    setInterval(() => {
+      if (alternate){
+        if(leftSideRef) animate(leftSideRef, (-720));
+        if(rightSideRef) animate(rightSideRef, 0);
+        animateColor(parentRef, !alternate)
+        alternate = false;
       } else {
-        // scrolling down
-
-        animate(leftSideRef, 0);
-        animate(rightSideRef, -720);
+        if (leftSideRef) animate(leftSideRef, 0);
+        if (rightSideRef) animate(rightSideRef, -720);
+        animateColor(parentRef, !alternate)
+        alternate = true;
       }
-    }, 1500))
-  }, [])
+    }, 4000)
+  })
 
-  return <HeroLayout>
+  return <HeroLayout ref={element => parentRef = element}>
     <HeroLeftSide ref={element => leftSideRef = element}>
       <HeroLeftFirstItem>
         <TextWrapper>

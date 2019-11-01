@@ -2,12 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {withRouter} from 'react-router-dom';
 import {
     HomeLayout, 
-    TitleManagement, 
-    TextWrapper, 
-    TitleCaption, 
-    TitleButton, 
-    TitleText,
-    HeaderWrapper,
     MiddleNav,
     MenuItem,
     MiddleSection,
@@ -78,7 +72,6 @@ import {
 } from './style';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
-    faAngleRight,
     faArrowRight,
     faAngleDown,
     faBars,
@@ -87,6 +80,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import Footer from 'components/footer';
+import {Hero} from 'components/vertical-slider/hero';
+
 
 const cannabis = '../assets/SVG/icon/canna.svg';
 const payment = '../assets/SVG/icon/payments.svg';
@@ -169,36 +164,19 @@ const Home = (props) => {
             <Menu>
                 <MenuItem>Management Solutions</MenuItem>
                 <MenuItem>Point of Sale</MenuItem>
-                <MenuItem>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
-                <MenuItem>About CTRAX</MenuItem>
+                <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
+                <MenuItem onClick={goto.bind(null, 'about')}>About CTRAX</MenuItem>
                 <MenuItem>Blog</MenuItem>
                 <MenuItem>Contact</MenuItem>
             </Menu>
             <MenuButton><div onClick={setShowMenu.bind(null, true)}><FontAwesomeIcon icon={faBars} /></div></MenuButton>
         </StickyMiddleNav>}
-        <HeaderWrapper>
-            <TextWrapper>
-                <TitleManagement>
-                    Management Solutions
-                </TitleManagement>
-                <TitleCaption>
-                    Cannabis software,
-                </TitleCaption>
-                <TitleCaption>
-                    done right!
-                </TitleCaption>
-                <TitleButton>
-                    Management Solutions
-                    <div><FontAwesomeIcon icon={faAngleRight}/></div>
-                </TitleButton>
-                <TitleText>See Hardware Solutions <span><FontAwesomeIcon icon={faArrowRight} /></span></TitleText>
-            </TextWrapper>
-        </HeaderWrapper>   
+        <Hero />   
         <MiddleNav ref={headerRef} sticky={sticky}>
-            <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
+            <MenuItem>Management Solutions</MenuItem>
             <MenuItem>Point of Sale</MenuItem>
             <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
-            <MenuItem onClick={goto.bind(null, 'management')}>About CTRAX</MenuItem>
+            <MenuItem onClick={goto.bind(null, 'about')}>About C-TRAX</MenuItem>
             <MenuItem>Blog</MenuItem>
             <MenuItem>Contact</MenuItem>
         </MiddleNav>
