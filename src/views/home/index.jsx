@@ -162,7 +162,7 @@ const Home = (props) => {
         {sticky && <StickyMiddleNav>
             <div/>
             <Menu>
-                <MenuItem>Management Solutions</MenuItem>
+                <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
                 <MenuItem>Point of Sale</MenuItem>
                 <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
                 <MenuItem onClick={goto.bind(null, 'about')}>About CTRAX</MenuItem>
@@ -173,7 +173,7 @@ const Home = (props) => {
         </StickyMiddleNav>}
         <Hero show={setShowMenu.bind(null, true)}/>   
         <MiddleNav ref={headerRef} sticky={sticky}>
-            <MenuItem>Management Solutions</MenuItem>
+            <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
             <MenuItem>Point of Sale</MenuItem>
             <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
             <MenuItem onClick={goto.bind(null, 'about')}>About C-TRAX</MenuItem>
