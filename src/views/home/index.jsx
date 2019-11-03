@@ -171,7 +171,7 @@ const Home = (props) => {
             </Menu>
             <MenuButton><div onClick={setShowMenu.bind(null, true)}><FontAwesomeIcon icon={faBars} /></div></MenuButton>
         </StickyMiddleNav>}
-        <Hero />   
+        <Hero show={setShowMenu.bind(null, true)}/>   
         <MiddleNav ref={headerRef} sticky={sticky}>
             <MenuItem>Management Solutions</MenuItem>
             <MenuItem>Point of Sale</MenuItem>

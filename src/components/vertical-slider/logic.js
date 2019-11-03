@@ -29,13 +29,13 @@ export const duplicateObj = (obj, number) => {
 export const animateColor = (element, alternate) => {
   
   if (alternate){
-    TweenMax.fromTo(element, 2, {
+    TweenMax.fromTo(element, 1, {
         backgroundColor: 'rgb(37, 60, 83)'
     }, {
         backgroundColor: 'rgb(145, 202, 98)'
     });
   }else{
-    TweenMax.fromTo(element, 2, {
+    TweenMax.fromTo(element, 1, {
       backgroundColor: 'rgb(145, 202, 98)'
   }, {
       backgroundColor: 'rgb(37, 60, 83)'

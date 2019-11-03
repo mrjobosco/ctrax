@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import {
   HeroLayout,
   HeroLeftSide,
@@ -15,6 +15,7 @@ import {
   TitleText,
   Controls,
   Pin,
+  Bars,
 
 } from './style';
 import { animate, animateColor } from './logic';
@@ -22,35 +23,53 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   faAngleRight,
   faArrowRight,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
-export const Hero = () => {
+export const Hero = (props) => {
   let leftSideRef = useRef(null);
   let rightSideRef = useRef(null);
   let parentRef = useRef(null);
-
+  let [active, setActive] = useState(true);
 
   useEffect(() => {
-    let alternate = true;
-    setInterval(() => {
-      if (alternate){
+    // let alternate = true;
+    const time = setInterval(() => {
+      if (active){
         if(leftSideRef) animate(leftSideRef, (-720));
         if(rightSideRef) animate(rightSideRef, 0);
-        animateColor(parentRef, !alternate)
-        alternate = false;
+        if(parentRef) animateColor(parentRef, !active)
+        setTimeout(() =>setActive(false), 1000)
       } else {
         if (leftSideRef) animate(leftSideRef, 0);
         if (rightSideRef) animate(rightSideRef, -720);
-        animateColor(parentRef, !alternate)
-        alternate = true;
+        if(parentRef) animateColor(parentRef, !active)
+        setTimeout(() =>setActive(true), 1000)
       }
     }, 4000)
-  })
+    return () => clearInterval(time);
+  },[active])
+
+  const toggle = (position) => {
+    if (position === true  && (active !== true)){
+      if(leftSideRef) animate(leftSideRef, (-720));
+      if(rightSideRef) animate(rightSideRef, 0);
+      if(parentRef) animateColor(parentRef, !position)
+      setTimeout(() => setActive(true), 1000)
+    } else if(position === false  && (active !== false)){
+      if (leftSideRef) animate(leftSideRef, 0);
+      if (rightSideRef) animate(rightSideRef, -720);
+      if(parentRef) animateColor(parentRef, !position)  
+      setTimeout(() => setActive(false), 1000)
+    }
+    
+  }
 
   return <HeroLayout ref={element => parentRef = element}>
+    <Bars onClick={props.show}><FontAwesomeIcon icon={faBars} /></Bars>
     <Controls>
-      <Pin><div/></Pin>
-      <Pin active={true}><div/></Pin>
+      <Pin active={active} onClick={toggle.bind(null, true)}><div/></Pin>
+      <Pin active={!active} onClick={toggle.bind(null, false)}><div/></Pin>
     </Controls>
     <HeroLeftSide ref={element => leftSideRef = element}>
       <HeroLeftFirstItem>

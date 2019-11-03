@@ -226,10 +226,24 @@ export const Pin = styled.div`
 export const Controls = styled.div`
 	width: 50px;
 	height: 50px;
-	z-index: 12000;
+	z-index: 4;
 	display: grid;
 	position: absolute;
 	top: 335px;
 	right: 60px;
+`
+
+export const Bars = styled.div`
+	width: 50px;
+	cursor: pointer;
+	position: absolute;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	color: #ffffff;
+	z-index: 4;
+	top: 40px;
+	right: 75px;
+	font-size: 30px;
 `
 
