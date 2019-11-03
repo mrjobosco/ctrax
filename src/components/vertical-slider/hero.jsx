@@ -13,6 +13,8 @@ import {
   TitleCaption, 
   TitleButton, 
   TitleText,
+  Controls,
+  Pin,
 
 } from './style';
 import { animate, animateColor } from './logic';
@@ -46,6 +48,10 @@ export const Hero = () => {
   })
 
   return <HeroLayout ref={element => parentRef = element}>
+    <Controls>
+      <Pin><div/></Pin>
+      <Pin active={true}><div/></Pin>
+    </Controls>
     <HeroLeftSide ref={element => leftSideRef = element}>
       <HeroLeftFirstItem>
         <TextWrapper>

@@ -186,16 +186,50 @@ export const TitleCaptionSmall = styled(TitleCaption)`
 	font-size: 32px;
 `
 
-export const pin = styled.div`
-	height: 20px;
-	width: 20px;
-	border: 1px solid #91CA62;
-	opacity: 0.2;
+export const Pin = styled.div`
+	cursor: pointer;
+	${props => props.active && css`
+		height: 20px;
+		width: 20px;
+		border: 1px solid rgba(145, 202, 98, .2);
+		border-radius: 100%;
+		box-sizing: border-box;
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		& div{
+			border-radius: 100%;
+			height: 10px;
+			width: 10px;
+			background: #91CA62;
+		}
+	`}
+	${props => !props.active && css`
+		height: 20px;
+		width: 20px;
+		border: none;
+		border-radius: 100%;
+		box-sizing: border-box;
+		display: grid;
+		align-content: center;
+		justify-content: center;
+		& div{
+			border-radius: 100%;
+			height: 10px;
+			width: 10px;
+			background: #91CA62;
+			opacity: .3;
+		}
+	`}
 `
 
 export const Controls = styled.div`
 	width: 50px;
-	height: 70px;
+	height: 50px;
+	z-index: 12000;
 	display: grid;
+	position: absolute;
+	top: 335px;
+	right: 60px;
 `
 
