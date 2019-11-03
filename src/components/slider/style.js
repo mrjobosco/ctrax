@@ -70,7 +70,6 @@ export const ItemTitle = styled.p`
     line-height: 26px;
     text-align: center;
     margin-bottom: 4rem;
-
 `
 
 export const SliderSensor = styled.div`
