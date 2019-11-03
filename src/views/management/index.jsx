@@ -50,12 +50,12 @@ import {
   DemoLeftText,
   DemoLeftTextSmall
 } from './style';
-import { GreenArrowButtons } from 'components/buttons';
 import Footer from 'components/footer';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   faPlus,
 } from '@fortawesome/free-solid-svg-icons';
+import { GreenArrowButtons } from 'components/buttons';
 const ipad = '../assets/png/ipad-managment-solutions-analytics-2.png';
 const creditCard = '../assets/SVG/Icon/credit card.svg';
 const square = '../assets/SVG/Icon/square.svg';
