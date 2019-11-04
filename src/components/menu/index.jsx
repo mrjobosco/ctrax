@@ -22,7 +22,7 @@ export const MenuContainer =  (props) => {
         <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
         <MenuItem onClick={goto.bind(null, 'point-of-sale')}>Point of Sale</MenuItem>
         <MenuItem onClick={goto.bind(null, 'store')}>Store</MenuItem>
-        <MenuItem>About C-Trax</MenuItem>
+        <MenuItem onClick={goto.bind(null, 'about')}>About C-Trax</MenuItem>
         <MenuItem>Blog</MenuItem>
         <MenuItem>Contact</MenuItem>
       </Menu>
