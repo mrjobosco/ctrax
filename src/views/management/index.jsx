@@ -51,7 +51,7 @@ import {
   DemoLeftTextSmall
 } from './style';
 import Footer from 'components/footer';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPlus,
 } from '@fortawesome/free-solid-svg-icons';
@@ -76,7 +76,7 @@ export default () => {
         </div>
       </HeaderSection>
       <FirstSection>
-        <FirstSectionLeft/>
+        <FirstSectionLeft />
         <FirstSectionRight>
           <TitleManagement>
             Management Solutions
@@ -108,7 +108,7 @@ export default () => {
           <SecondSectionMenuItem>SCREEN</SecondSectionMenuItem>
           <SecondSectionMenuItem>SCREEN</SecondSectionMenuItem>
         </SecondSectionMenu>
-        <SecondSectionImage src={ipad}/>
+        <SecondSectionImage src={ipad} />
         <SecondSectionItemTitle>
           Screen description
         </SecondSectionItemTitle>
@@ -157,135 +157,135 @@ export default () => {
             reporting all through your admin portal. With C-Trax analytics you can get
             current and easy to understand reports on your Sales, Inventory, Vendors, Products
             and budristas. Compare and contrast preformance across locations, balnces inventory
-            and staffing. ROI reports to ensure you stock your selves with the best products. 
+            and staffing. ROI reports to ensure you stock your selves with the best products.
             Vendors and products slaes as % of store revenues. Track customer up-sells and employee
             performance.
           </ThirdSectionText>
           <ThirdSectionItems>
-            <img src={tick} alt={'tick'}/>
+            <img src={tick} alt={'tick'} />
             <div>Average ticket pricing</div>
           </ThirdSectionItems>
           <ThirdSectionItems>
-            <img src={tick} alt={'tick'}/>
+            <img src={tick} alt={'tick'} />
             <div>Sales % across categories</div>
           </ThirdSectionItems>
           <ThirdSectionItems>
-            <img src={tick} alt={'tick'}/>
+            <img src={tick} alt={'tick'} />
             <div>Vendor affinity across budtenders</div>
           </ThirdSectionItems>
           <ThirdSectionItems>
-            <img src={tick} alt={'tick'}/>
+            <img src={tick} alt={'tick'} />
             <div>Embedded partnership with Yurbi.com</div>
           </ThirdSectionItems>
         </ThirdSectionRight>
       </ThirdSection>
       <SixthSection>
-            <SixthSectionHeader>
-                Pricing
+        <SixthSectionHeader>
+          Pricing
             </SixthSectionHeader>
-            <SixthSectionBody>
-                <SalesFeature border={true}>
-                    <SaleFeatureTitle>
-                        Core
+        <SixthSectionBody>
+          <SalesFeature border={true}>
+            <SaleFeatureTitle>
+              Core
                     </SaleFeatureTitle>
-                    <SaleFeatureLightText>
-                        Unlimited cashiers
+            <SaleFeatureLightText>
+              Unlimited cashiers
                     </SaleFeatureLightText>
-                    <SaleFeatureCostText>
-                        <p>$</p>
-                        <h3>249</h3>
-                    </SaleFeatureCostText>
-                    <SaleFeatureLightText spacing={25}>
-                        per month
+            <SaleFeatureCostText>
+              <p>$</p>
+              <h3>249</h3>
+            </SaleFeatureCostText>
+            <SaleFeatureLightText spacing={25}>
+              per month
                     </SaleFeatureLightText>
-                    <SaleFeatureLightText spacing={25}>
-                        $199 Annually
+            <SaleFeatureLightText spacing={25}>
+              $199 Annually
                     </SaleFeatureLightText>
-                    <SaleFeatureHorizontalDivider spacing={35}/>
-                    <SaleFeatureText spacing={25}>
-                        Point of Sale register
+            <SaleFeatureHorizontalDivider spacing={35} />
+            <SaleFeatureText spacing={25}>
+              Point of Sale register
                     </SaleFeatureText>
-                    <SaleFeatureText spacing={25}>
-                        Inventory management
+            <SaleFeatureText spacing={25}>
+              Inventory management
                     </SaleFeatureText>
-                    <SaleFeatureText spacing={45}>
-                        Sales reporting
+            <SaleFeatureText spacing={45}>
+              Sales reporting
                     </SaleFeatureText>
-                    <SaleFeatureHorizontalDivider spacing={10}/>
-                    <SaleFeatureReadMore>
-                        <SaleFeatureText>
-                            Read more
+            <SaleFeatureHorizontalDivider spacing={10} />
+            <SaleFeatureReadMore>
+              <SaleFeatureText>
+                Read more
                         </SaleFeatureText>
-                        <div>
-                            <FontAwesomeIcon icon={faPlus}/>
-                        </div>
-                    </SaleFeatureReadMore>
-                    <SaleFeatureHorizontalDivider spacing={10}/>
-                    <SaleFeatureBotton>
-                        Order now
+              <div>
+                <FontAwesomeIcon icon={faPlus} />
+              </div>
+            </SaleFeatureReadMore>
+            <SaleFeatureHorizontalDivider spacing={10} />
+            <SaleFeatureBotton>
+              Order now
                     </SaleFeatureBotton>
-                </SalesFeature>
-                <SalesFeature>
-                    <SaleFeatureTitle>
-                        Enterprise
+          </SalesFeature>
+          <SalesFeature>
+            <SaleFeatureTitle>
+              Enterprise
                     </SaleFeatureTitle>
-                    <SaleFeatureLightText>
-                        Unlimited terminals and users
+            <SaleFeatureLightText>
+              Unlimited terminals and users
                     </SaleFeatureLightText>
-                    <SaleFeatureCostText>
-                        <p>$</p>
-                        <h3>499</h3>
-                    </SaleFeatureCostText>
-                    <SaleFeatureLightText spacing={25}>
-                        per month
+            <SaleFeatureCostText>
+              <p>$</p>
+              <h3>499</h3>
+            </SaleFeatureCostText>
+            <SaleFeatureLightText spacing={25}>
+              per month
                     </SaleFeatureLightText>
-                    <SaleFeatureLightText spacing={25}>
-                        $399 Annually
+            <SaleFeatureLightText spacing={25}>
+              $399 Annually
                     </SaleFeatureLightText>
-                    <SaleFeatureHorizontalDivider spacing={35}/>
-                    <SaleFeatureText spacing={25}>
-                        Includes enhances reporting
+            <SaleFeatureHorizontalDivider spacing={35} />
+            <SaleFeatureText spacing={25}>
+              Includes enhances reporting
                     </SaleFeatureText>
-                    <SaleFeatureText spacing={25}>
-                        All integrations
+            <SaleFeatureText spacing={25}>
+              All integrations
                     </SaleFeatureText>
-                    <SaleFeatureText spacing={7}>
-                        Additional options available
+            <SaleFeatureText spacing={7}>
+              Additional options available
                     </SaleFeatureText>
-                    <SaleFeatureText spacing={25}>
-                        A la carte and Customer Loyalty
+            <SaleFeatureText spacing={25}>
+              A la carte and Customer Loyalty
                     </SaleFeatureText>
-                    <SaleFeatureHorizontalDivider spacing={10}/>
-                    <SaleFeatureReadMore>
-                        <SaleFeatureText>
-                            Read more
+            <SaleFeatureHorizontalDivider spacing={10} />
+            <SaleFeatureReadMore>
+              <SaleFeatureText>
+                Read more
                         </SaleFeatureText>
-                        <div>
-                            <FontAwesomeIcon icon={faPlus}/>
-                        </div>
-                    </SaleFeatureReadMore>
-                    <SaleFeatureHorizontalDivider spacing={10}/>
-                    <SaleFeatureBotton>
-                        Order now
+              <div>
+                <FontAwesomeIcon icon={faPlus} />
+              </div>
+            </SaleFeatureReadMore>
+            <SaleFeatureHorizontalDivider spacing={10} />
+            <SaleFeatureBotton>
+              Order now
                     </SaleFeatureBotton>
-                </SalesFeature>
-            </SixthSectionBody>
-        </SixthSection>
-        <DemoWrapper>
-          <Demo />
-          <DemoOverlay>
-              <DemoLeft>
-                  <DemoLeftText>
-                      Schedule a Demo.
+          </SalesFeature>
+        </SixthSectionBody>
+      </SixthSection>
+      <DemoWrapper>
+        <Demo />
+        <DemoOverlay>
+          <DemoLeft>
+            <DemoLeftText>
+              Schedule a Demo.
                   </DemoLeftText>
-                  <DemoLeftTextSmall>
-                      We'll never share your email and you can
-                      opt out at any time!
+            <DemoLeftTextSmall>
+              We'll never share your email and you can
+              opt out at any time!
                   </DemoLeftTextSmall>
-              </DemoLeft>
-              <DemoRight></DemoRight>
-          </DemoOverlay>
-        </DemoWrapper>
+          </DemoLeft>
+          <DemoRight></DemoRight>
+        </DemoOverlay>
+      </DemoWrapper>
       <Footer />
     </ManagementLayout>
   )

@@ -163,7 +163,7 @@ const Home = (props) => {
             <div/>
             <Menu>
                 <MenuItem onClick={goto.bind(null, 'management')}>Management Solutions</MenuItem>
-                <MenuItem>Point of Sale</MenuItem>
+                <MenuItem onClick={goto.bind(null, 'point-of-sale')}>Point of Sale</MenuItem>
                 <MenuItem onClick={goto.bind(null, 'store')}>Store <FontAwesomeIcon icon={faAngleDown}/></MenuItem>
                 <MenuItem onClick={goto.bind(null, 'about')}>About CTRAX</MenuItem>
                 <MenuItem>Blog</MenuItem>

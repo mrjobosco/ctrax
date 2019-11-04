@@ -25,7 +25,7 @@ export const Header  = (props) => {
                 <Menu>
                     <HeaderMenu>
                         <HeaderMunuItems onClick={props.link.bind(null, '')}>Home</HeaderMunuItems>
-                        <HeaderMunuItems>POS Hardware</HeaderMunuItems>
+                        <HeaderMunuItems onClick={props.link(null, 'point-of-sale')}>POS Hardware</HeaderMunuItems>
                         <HeaderMunuItems>Merchandise</HeaderMunuItems>
                         <HeaderMunuItems>Sign In</HeaderMunuItems>
                     </HeaderMenu>

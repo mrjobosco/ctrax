@@ -321,66 +321,66 @@ export const ThirdSectionItems = styled.div`
 `
 
 export const SixthSection = styled.div`
-		display: grid;
-		width: inherit;
-		height: 1010px;
-        border: 1px solid #EEEEEE;
-        border-bottom: none;
-		justify-content: center;
+    display: grid;
+    width: inherit;
+    height: 1010px;
+    border: 1px solid #EEEEEE;
+    border-bottom: none;
+    justify-content: center;
 `
 
 export const SixthSectionHeader = styled.p`
-		color: #19AECA;
-		font-family: Bitter;
-		font-size: 46px;
-		line-height: 56px;
-		text-align: center;
-		margin-top: 76px;
-		margin-bottom: 76px;
+    color: #19AECA;
+    font-family: Bitter;
+    font-size: 46px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 76px;
+    margin-bottom: 76px;
 `
 
 export const SixthSectionBody = styled.p`
-		display: grid;
-		height: 678px;
-		width: 1140px;
-		border-radius: 4px;
-		background-color: #FFFFFF;
-		box-shadow: 0 0 24px 0 rgba(0,0,0,0.04);
-		grid-auto-flow: column;
+    display: grid;
+    height: 678px;
+    width: 1140px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,0.04);
+    grid-auto-flow: column;
 `
 
 export const SalesFeature = styled.div`
-		display: grid;
-		justify-content: center;
-		align-content: start;
-		padding: 32px;
-		${props => props.border && css`
-				border-right: 1px solid #EEEEEE;
-		`}
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    padding: 32px;
+    ${props => props.border && css`
+            border-right: 1px solid #EEEEEE;
+    `}
 `
 
 export const SaleFeatureTitle = styled.p`
-		color: #19AECA;
-		font-family: "Arial";
-		font-size: 20px;
-		letter-spacing: 0.2px;
-		line-height: 26px;
-		text-align: center;
-		font-weight: bolder;
-		margin-bottom: 8px;
+    color: #19AECA;
+    font-family: "Arial";
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 8px;
 `
 
 export const SaleFeatureLightText = styled.p`
-		opacity: 0.8;
-		color: #000000;
-		font-family: "Roboto";
-		font-size: 16px;
-		letter-spacing: 0.2px;
-		line-height: 25px;
-		text-align: center;
-		${props => props.spacing && css`
-				margin-bottom: ${props.spacing}px;
-		`}
+    opacity: 0.8;
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+    text-align: center;
+    ${props => props.spacing && css`
+            margin-bottom: ${props.spacing}px;
+    `}
 `
 
 export const SaleFeatureCostText = styled.div`
