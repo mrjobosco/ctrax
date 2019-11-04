@@ -83,9 +83,9 @@ import Footer from 'components/footer';
 import {Hero} from 'components/vertical-slider/hero';
 
 
-const cannabis = '../assets/SVG/icon/canna.svg';
-const payment = '../assets/SVG/icon/payments.svg';
-const tractor = '../assets/SVG/icon/manufacturer.svg';
+const cannabis = '../assets/SVG/Icon/canna.svg';
+const payment = '../assets/SVG/Icon/payments.svg';
+const tractor = '../assets/SVG/Icon/manufacturer.svg';
 const partnerLogoElo = '../assets/partner-logo/partner-logo-elo.svg';
 const partnerLogoNCIN = '../assets/partner-logo/partner-logo-NCIN.png';
 const partnerLogoSquare = '../assets/partner-logo/partner-logo-square.svg';
